@@ -3,6 +3,92 @@
   <head>
     <meta charset="UTF-8">
     <title>Estructura Base</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f6f8;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      div, form, table {
+        background: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+
+      }
+      p {
+        font-size: large;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: #10797c;
+      }
+      img {
+        width: 400px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+      }
+      ul, ol {
+        padding-left: 30px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th {
+        background: #10797c;
+        color: white;
+        padding: 10px;
+      }
+
+      td {
+        padding: 10px;
+      }
+      a {
+        color: #10797c;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      a:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+      fieldset {
+        border: 2px solid #0b5ed7;
+        border-radius: 20px;
+        padding: 20px;
+      }
+      legend {
+        font-weight: bold;
+        padding: 10px;
+        color: #0b5ed7;
+      }
+      label {
+        font-weight: bold;
+      }
+      input, select, textarea {
+        margin-top: 5px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .boton {
+        background: #0b53d7;
+        color: white;
+        border: none;
+        cursor: pointer
+      }
+      input[type="reset"] {
+        background: #6c757d;
+      }
+      input[type="submit"]:hover {
+        background: #6c757d;
+      }
+    </style>
   </head>
   <body>
     <h3 id="encabezados" style="color: rgb(255, 0, 0); background: #000000; width: 50%; margin: auto; text-align: center;">Encabezados</h3>
@@ -123,7 +209,8 @@
         <label>Archivo</label><br>
         <input type="file">
         <br><br>
-        <input type="submit">
+        <input class="boton" type="submit">
+        <input class="boton" type="reset">
       </fieldset>
     </form>
 
