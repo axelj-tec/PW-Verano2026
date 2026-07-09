@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    height: 100dvh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logoX {
+    flex-grow: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+}
+
+.logoX img {
+    width: 100%;
+    max-width: 350px;
+    object-fit: contain;
+}
+
+footer {
+    grid-column: 2 span;
+    padding: 2px 20px;
+    align-self: flex-end;
+    height: fit-content;
+}
+
+.grow {
+    flex-grow: 2;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-1 {
+    gap: 4px;
+}
+
+.contenedor {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 18px
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 50px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0px;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.legend {
+    font-size: 11px;
+    color: #555;
+}
+
+.text-blue {
+    color: rgb(33, 136, 255);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.o {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    background: #000;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o span {
+    position: relative;
+    z-index: 10;
+    background: #000;
+    padding: 10px;
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+.o::before {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    background: #fff;
+    height: 0px;
+    border-bottom: 1px solid #111;
+    z-index: -1;
+}
+
+.logo {
+    width: 20px;
+}
+
+.button {
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px soli white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background: rgb(33, 136, 255);
+    border: 1px solid rgb(33, 136, 255);
+}
+
+.btn-white {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-outline {
+    color: rgb(33, 136, 255);
+    background: transparent;
+    border: 1px solid #111;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul li {
+    border-left: 1px solid #333;
+    padding: 0 10px;
+}
+
+ul li:first-child {
+    border-left: none;
+}
+
+@media (max-width: 650px) {
+    .contenido {
+        flex-direction: column;
+    }
+    .logoX img {
+        height: 30dvh;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+    
+    main {
+        padding: 0;
+        max-width: 60dvw;
+        margin: auto;
+    }
+
+}
